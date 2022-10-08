@@ -1,26 +1,21 @@
 import random
-import clear
 
 
-class BlackJack:
+def black():
     user_cards = []
     computer_cards = []
     is_game_over = False
 
-    @staticmethod
     def deal_card():
         cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
         card = random.choice(cards)
         return card
 
-    @staticmethod
     def calculate_score(cards):
         return sum(cards)
 
-    @staticmethod
-    def compare(user_score, computer_score):
+    def compare(user_scores, computer_scores):
         pass
-
 
     for _ in range(2):
         user_cards.append(deal_card())
